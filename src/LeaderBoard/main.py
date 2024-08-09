@@ -100,6 +100,14 @@ with leader_board:
         st.bar_chart(score_df)
 
 
+        total_score = score_df.sum(axis=1)
+        total_score.name = "Final Score"
+        total_score = total_score.to_frame()
+        total_score['Rank'] = total_score['Final Score'].rank(ascending=False, method='min')
+        total_score.sort_values(by='Rank',inplace=True)
+        st.write(total_score)
+
+
         # if st.button("Show Next Column"):
         #     if 'show_columns' not in st.session_state:
         #         st.session_state['show_columns'] = 1

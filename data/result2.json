@@ -1,8 +1,0 @@
-{"accuracy_score": 0.08973333333333334,
- "precision_score": 0.002428526293691879,
- "recall_score": 0.0873333333333334,
- "f1_score": 0.020352896254670304,
- "roc_auc_score": 0.5245416296296296,
- "CrossEntropyLoss": 3.205396611480713,
- "inference_time": 90.67331743240356,
- "model_parameters_count": 298345723975}
